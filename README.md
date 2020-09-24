@@ -5,4 +5,4 @@ A IA decide em qual casa jogar através de cálculos estatísticos simples e nã
 
 Para cada casa vazia, ela conta em quantos jogos hipotéticos venceria e em quantos perderia, e então subtrai um número pelo outro. Isso resulta em uma pontuação para cada casa, que servirá como fator de decisão para onde jogar. Se o humano estiver na iminência de vencer, a IA sempre que possível o impedirá, ignorando as pontuações.
 
-Testado em Linux, Windows e MacOS.
+Testado em Linux e Windows.
