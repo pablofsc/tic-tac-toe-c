@@ -1,4 +1,4 @@
-#include "bibl.h" 
+#include "protitipos.h" 
 
 #ifdef __unix__
 	void limpartela() {
