@@ -16,9 +16,9 @@ int winsx = 0, winso = 0, empates = 0;
 		printf("\n    A   B   C  ");
 		printf("\n 1  %c %c %c %c %c ", tab[0], 179, tab[1], 179, tab[2]); // os números correspondem a caracteres que formam a grade
 		printf("\n   %c%c%c%c%c%c%c%c%c%c%c ", 196, 196, 196, 197, 196, 196, 196, 197, 196, 196, 196); // = ───┼───┼───
-		printf("\n 1  %c %c %c %c %c ", tab[3], 179, tab[4], 179, tab[5]);
+		printf("\n 2  %c %c %c %c %c ", tab[3], 179, tab[4], 179, tab[5]);
 		printf("\n   %c%c%c%c%c%c%c%c%c%c%c ", 196, 196, 196, 197, 196, 196, 196, 197, 196, 196, 196); // = ───┼───┼───
-		printf("\n 1  %c %c %c %c %c ", tab[6], 179, tab[7], 179, tab[8]);
+		printf("\n 3  %c %c %c %c %c ", tab[6], 179, tab[7], 179, tab[8]);
 		printf("\n\n");
 	}
 #else
