@@ -1,6 +1,28 @@
 char tabuleiro[9];
 int winsx = 0, winso = 0, empates = 0;
 
+#ifdef __unix__
+	void limpartela() {
+		system("clear");
+	}
+	
+	void imprimir(char tab[9]) {
+		limpartela();
+		
+		printf("x: %i\n", winsx);
+		printf("o: %i\n", winso);
+		printf("empates: %i\n", empates);
+		
+		printf("\n    A   B   C  ");
+		printf("\n 1  %c │ %c │ %c ", tab[0], tab[1], tab[2]);
+		printf("\n   ───┼───┼─── ");
+		printf("\n 2  %c │ %c │ %c ", tab[3], tab[4], tab[5]);
+		printf("\n   ───┼───┼─── ");
+		printf("\n 3  %c │ %c │ %c ", tab[6], tab[7], tab[8]);
+		printf("\n\n");
+	}
+#endif
+
 #ifdef _WIN32
 	void limpartela() {
 		system("cls");
@@ -19,26 +41,6 @@ int winsx = 0, winso = 0, empates = 0;
 		printf("\n 2  %c %c %c %c %c ", tab[3], 179, tab[4], 179, tab[5]);
 		printf("\n   %c%c%c%c%c%c%c%c%c%c%c ", 196, 196, 196, 197, 196, 196, 196, 197, 196, 196, 196); // = ───┼───┼───
 		printf("\n 3  %c %c %c %c %c ", tab[6], 179, tab[7], 179, tab[8]);
-		printf("\n\n");
-	}
-#else
-	void limpartela() {
-		system("clear");
-	}
-	
-	void imprimir(char tab[9]) {
-		limpartela();
-		
-		printf("x: %i\n", winsx);
-		printf("o: %i\n", winso);
-		printf("empates: %i\n", empates);
-		
-		printf("\n    A   B   C  ");
-		printf("\n 1  %c │ %c │ %c ", tab[0], tab[1], tab[2]);
-		printf("\n   ───┼───┼─── ");
-		printf("\n 2  %c │ %c │ %c ", tab[3], tab[4], tab[5]);
-		printf("\n   ───┼───┼─── ");
-		printf("\n 3  %c │ %c │ %c ", tab[6], tab[7], tab[8]);
 		printf("\n\n");
 	}
 #endif
